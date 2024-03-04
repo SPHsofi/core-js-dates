@@ -48,10 +48,7 @@ function getTime(date) {
  */
 function getDayName(date) {
   const newDate = new Date(date);
-  const options = {
-    weekday: 'long',
-  };
-  return newDate.toLocaleString('en-US', options);
+  return newDate.toLocaleString('en-US', { weekday: 'long' });
 }
 
 /**
